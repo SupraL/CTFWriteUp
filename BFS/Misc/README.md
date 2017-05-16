@@ -13,3 +13,5 @@
 ```
 openssl rsautl -decrypt -in C:\Users\Admin\Desktop\key.txt -out plaintext -inkey C:\Users\Admin\Desktop\privateKey.bin
 ```
+
+![text](http://i.imgur.com/19HESo1.png)
