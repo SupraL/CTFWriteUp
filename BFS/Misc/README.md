@@ -1,13 +1,13 @@
 <h1>Misc - 100</h1>
 <p>Given an pcap file , and i found that there has some FTP transmission there. Finally i have found that:</p>
 <p>A zip file contains key.txt</p>
-[![IMAGE ALT TEXT HERE](http://i.imgur.com/Nx3O3UQ.png)
+<img src="http://i.imgur.com/Nx3O3UQ.png"/>
 
 <p>Public key file</p>
-[![IMAGE ALT TEXT HERE](http://i.imgur.com/AB7GPMo.png)
+<img src="http://i.imgur.com/AB7GPMo.png"/>
 
 <p>Private key file</p>
-[![IMAGE ALT TEXT HERE](http://i.imgur.com/Lino5F6.png)
+<img src="http://i.imgur.com/Lino5F6.png)"/>
 
 <p>It seems key.txt are encrypted. So, we try to decrypt it with private key</p>
 ```
