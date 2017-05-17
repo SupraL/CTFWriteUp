@@ -4,6 +4,7 @@
 2018%20 can bypass the checking.<br/>
 "bar1":"2018%20"
 </p>
+
 ```php
 is_numeric(@$a["bar1"])?die("nope"):NULL;
 if(@$a["bar1"]){
@@ -15,6 +16,7 @@ if(@$a["bar1"]){
 It can use php type juggling to bypass. It is because when string compare with integer, string will type casting to integer. (intval('nudt') == 0). So, only need to change one of the value to 0.<br/>
 "bar2":[[1],1,2,0,1]
 </p>
+
 ```php
 	if(is_array(@$a["bar2"])){
         if(count($a["bar2"])!==5 OR !is_array($a["bar2"][0])) die("nope");
@@ -29,6 +31,7 @@ It can use php type juggling to bypass. It is because when string compare with i
 ```
 
 <p>3. String compare with array in strcmp will be null. And %00 can interrput eregi.</p>
+
 ```php
 $c=@$_GET['cat'];
 $d=@$_GET['dog'];
