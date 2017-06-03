@@ -34,6 +34,7 @@ else:
 ```
 
 <h3>0x2 Reverse the decode algo</h3>
+
 ```python
 import base64
 
