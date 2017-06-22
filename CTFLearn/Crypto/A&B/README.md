@@ -18,15 +18,11 @@ flag = "8&4,(19&3)&13,2&0,9&5,60&-20,9&7,10&8,(30&20)&13, 11&7,30&8,8&-2,29&7,68
 
 def cal(eq):
     if "(" in eq:
-        eq = eq.replace("(","").replace(")&","@")
-        arr = eq.split("@")
-        ans1 = cal(arr[0])
-        ans2 = cal(str(ans1) + "&" + arr[1])
-        return ans2
+        arr = eq.replace("(","").replace(")&","@").split("@")
+        return cal(str(cal(arr[0])) + "&" + arr[1])
     else:
         num = eq.split("&")
-        ans = (int(num[0]) + int(num[1]))/2
-        return ans
+        return (int(num[0]) + int(num[1]))/2
 
 #8&4 = (8+4)/2 = 6 = f , and so on.
 dictWord = "abcdefghijklmnopqrstuvwxyz"
