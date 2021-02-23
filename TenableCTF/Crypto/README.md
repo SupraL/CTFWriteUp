@@ -2,7 +2,7 @@
 
 ## Solution
 
-Recover the seed by using the provided random seed.
+Recover the seed by using the provided random number. As the range of the seed is only from 1 to 10000, it is possible to recover it by brute force.
 
 ### Result
 ```
